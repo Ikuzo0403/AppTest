@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <link rel="stylesheet" href="main.css">
+    <title>Yoshiのサイト</title>
+
+
+  </head>
+
+  <body>
+
+    <div id="main_aria">
+      <div id="menu_area">
+        <ul id="navi">
+          <li ><a href ="#main_aria">Top</a></li>
+          <li ><a href ="#news_block">News</a></li>
+          <li ><a href ="#profile_block">Profile</a></li>
+          <li onclick="ScrollWindow('navi')">Achievement</li>
+        </ul>
+      </div>
+      <div>
+        <img id="main_photo" src="img/top画.png"  alt="main画像">
+      </div>
+      <div id="message_block">
+        <p>ようこそ。来ていただきました。</p>
+        <p>ITエンジニアの和田能育(わだ よしいく)です。</p>
+        <p>新規事業を立ち上げられた方の、WEB支援をおこなっています。</p>
+        <p>WEBページを作りましょう！</p>
+
+      </div>
+      <div class="test_margin"></div>
+      <div id="news_block">
+        <h2>NEWS</h2>
+        <p>2021/10/12 コロナワクチンを接種しました。</p>
+        <p>2021/02/22 結婚しました。</p>
+      </div>
+      <div class="test_margin"></div>
+      <div id="profile_block">
+        <h2>PROFILE</h2>
+        <p>31歳から国家資格[応用情報処理技術者]を取得後にIT業界へ参入。</p>
+        <p>ＩＴ人材派遣業で鉄砲玉に従事した後、現在は個人事業主として</p>
+        <p>システム開発を行っています。</p>
+      </div>
+
+    </div>
+    <script>
+      /* ナビボタンでページを移動する。 */
+      $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          let speed = 400; // ミリ秒で記述
+          let href = $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top;
+          $('body,html').animate({
+            scrollTop: position
+          }, speed, 'swing');
+          return false;
+      });
+    </script>
+  </body>
+
+</html>

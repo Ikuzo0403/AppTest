@@ -1,0 +1,90 @@
+body{
+    background-color: black;
+        -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+}
+
+p {
+	line-height: 0;
+}
+
+ul{
+	padding-inline-start: 0px;
+}
+
+li{
+	width: auto;
+}
+
+#menu_area{
+	width: 980px;
+	margin: 0 auto;
+}
+
+#navi{
+	color:darkred;
+	list-style: none;
+	width: 980px;
+}
+
+
+
+#menu_area li {
+	width: 100px;
+	display: inline-block;
+}
+
+#main_aria{
+    background-color: gray;
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+	height: 2500px;
+}
+
+#main_photo{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#main_photo{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#news_block{
+	margin-left: 220px;
+	text-align: left;
+}
+
+#profile_block{
+	margin-left: 220px;
+	text-align: left;
+}
+
+.test_margin{
+
+	margin-bottom: 800px;
+
+}
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+  		opacity: 1
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+  		opacity: 0
+	}
+
+	100% {
+  		opacity: 1
+	}
+}
